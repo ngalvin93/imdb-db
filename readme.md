@@ -58,6 +58,11 @@ MOST: TV Episode
 LEAST: TV Short
 
 - How many entries have separate primary_titles and original_titles
+SELECT Count(*)
+	FROM title_basics
+	WHERE primary_title <> original_title;
+
+RESULT: 91,394
 
 - How many characters long is the longest title? https://w3resource.com/PostgreSQL/length-function.php
 
