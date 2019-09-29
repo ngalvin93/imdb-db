@@ -45,6 +45,17 @@ tvSpecial
 tvSeries
 
 - Of these title_types, which has the most records? The least records? http://www.postgresqltutorial.com/postgresql-count-function/
+SELECT 
+	title_type,
+	COUNT (title_type)
+FROM
+	title_basics
+GROUP BY
+	title_type;
+
+RESULT
+MOST: TV Episode
+LEAST: TV Short
 
 - How many entries have separate primary_titles and original_titles
 
