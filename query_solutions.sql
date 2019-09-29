@@ -1,25 +1,25 @@
 SELECT Count(*) 
-	FROM title_basics
-	WHERE runtime_minutes > 180;
+FROM title_basics
+WHERE runtime_minutes > 180;
 	
 	
 SELECT Count(*) 
-	FROM title_basics
-	WHERE start_year > 2010;
+FROM title_basics
+WHERE start_year > 2010;
 	
 	
 SELECT tconst
-	FROM title_basics
-	WHERE primary_title = 'The Dark Knight' AND title_type = 'movie';
+FROM title_basics
+WHERE primary_title = 'The Dark Knight' AND title_type = 'movie';
 	
 	
 SELECT Count(*)
-	FROM title_basics
-	WHERE start_year > 2000 AND genres LIKE '%Comedy%' AND genres LIKE '%Horror%';
+FROM title_basics
+WHERE (start_year > 2000) AND (genres LIKE '%Comedy%') AND (genres LIKE '%Horror%');
 	
 	
 SELECT DISTINCT title_type
-	FROM title_basics;
+FROM title_basics;
 	
 	
 SELECT 
@@ -32,8 +32,8 @@ GROUP BY
 	
 	
 SELECT Count(*)
-	FROM title_basics
-	WHERE primary_title <> original_title;
+FROM title_basics
+WHERE primary_title != original_title;
 	
 	
 SELECT
