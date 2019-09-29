@@ -24,8 +24,25 @@ SELECT tconst
 RESULT tt0468569
 
 - How many movies that came out after 2000 are both Comedies and Horrors? https://www.w3schools.com/sql/sql_wildcards.asp might help for this query
+SELECT Count(*)
+	FROM title_basics
+	WHERE start_year > 2000 AND genres LIKE '%Comedy%' AND genres LIKE '%Horror%'; 
+RESULT 13,324
 
 - What are the different kinds of title_types in this table? https://www.dofactory.com/sql/select-distinct
+SELECT DISTINCT title_type
+	FROM title_basics;
+RESULT
+tvShort
+movie
+tvMovie
+short
+tvMiniSeries
+videoGame
+tvEpisode
+video
+tvSpecial
+tvSeries
 
 - Of these title_types, which has the most records? The least records? http://www.postgresqltutorial.com/postgresql-count-function/
 
