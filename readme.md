@@ -65,7 +65,13 @@ SELECT Count(*)
 RESULT: 91,394
 
 - How many characters long is the longest title? https://w3resource.com/PostgreSQL/length-function.php
+SELECT primary_title, length(primary_title)
+	FROM title_basics
+    ORDER BY length DESC;
+
+RESULT: 408
 
 - How many titles are either documentaries from the 1800s or Comedies from 2018 that are less than one hour long?
+
 
 - My favorite title is tt3467114 . Which title is it?
