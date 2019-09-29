@@ -5,12 +5,20 @@
 5) Your imdb db should now have a table with 5 million rows of movie data!
 
 - How many movies are longer than 3 hours long?
-12,677
+SELECT Count(*) 
+    FROM title_basics
+    WHERE runtime_minutes > 180;
+
+RESULT 12,677
 
 - How many movies came out after the year 2010?
-16,910
+SELECT Count(*)
+	FROM title_basics
+	WHERE start_year > 2010;
+RESULT 2,168,478
 
 - What's the imdb ID for "The Dark Knight"
+
 tt0468569
 
 - How many movies that came out after 2000 are both Comedies and Horrors? https://www.w3schools.com/sql/sql_wildcards.asp might help for this query
