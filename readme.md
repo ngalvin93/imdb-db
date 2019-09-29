@@ -18,8 +18,10 @@ SELECT Count(*)
 RESULT 2,168,478
 
 - What's the imdb ID for "The Dark Knight"
-
-tt0468569
+SELECT tconst
+	FROM title_basics
+	WHERE primary_title = 'The Dark Knight' AND title_type = 'movie';
+RESULT tt0468569
 
 - How many movies that came out after 2000 are both Comedies and Horrors? https://www.w3schools.com/sql/sql_wildcards.asp might help for this query
 
