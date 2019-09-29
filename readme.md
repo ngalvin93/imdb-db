@@ -72,6 +72,11 @@ SELECT primary_title, length(primary_title)
 RESULT: 408
 
 - How many titles are either documentaries from the 1800s or Comedies from 2018 that are less than one hour long?
-
+skip
 
 - My favorite title is tt3467114 . Which title is it?
+SELECT tconst, primary_title
+FROM title_basics
+WHERE tconst = 'tt3467114';
+
+RESULT: Halo 5: Gaurdians
