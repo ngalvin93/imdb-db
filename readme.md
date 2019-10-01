@@ -4,7 +4,7 @@
 4) In your terminal, run `psql -d imdb < titles.sql`
 5) Your imdb db should now have a table with 5 million rows of movie data!
 6) Answer the following questions by searching through the database
-7) Solutions are in 'query_solutions.sql'
+7) Solutions are in 'query_solutions.sql'!
 
 1. How many movies are longer than 3 hours long?
 12,677
